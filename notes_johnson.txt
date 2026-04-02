@@ -1,0 +1,12 @@
+# EDA - ORANGE
+## Correlation Analysis
+    - Spearman because synthetic dataset is equally distributed/not normal
+    - No correlation > 0.35
+
+    Takeaway: No redundant features
+
+## Column Statistics
+    - distributions are fairly even for all possible values of each feature
+
+
+
