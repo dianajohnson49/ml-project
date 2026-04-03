@@ -1,0 +1,111 @@
+Age
+    - continuous 
+    - Range: 18-60
+
+Gender
+    - discrete
+    - categorical
+    - Other, Male, Female
+
+Marital_Status
+    - discrete
+    - categorical
+    - Single, Divorced, Married
+
+Education_Level 
+    - discrete
+    - categorical
+    - High School, Bachelor, Master, PhD
+
+Employment
+    - discrete
+    - categorical
+    - Student, Unemployed, Employed, Self-Employed
+
+Sleep_Hours
+    - continuous
+    - Range: 3-10
+
+Physical_activity_hours_per_week
+    - continuous
+    - Range: 0-15
+
+Screen_time
+    - discrete
+    - numerical
+    - Range: 1-12
+
+Social_support_Score
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Work_Stress_level
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Academic_pressure_level
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Job_satisfaction_level
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Financial_stress_level
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Working_Hours
+    - discrete
+    - numerical
+    - Range: 20-70
+
+Anxiety Score 
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Depression_score
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Stress_level  
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Mood_swings_frequency 
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Concentration_difficulty_level
+    - discrete
+    - numerical
+    - Range: 1-10
+
+Panic_attack_history
+    - binary
+
+family_history 
+    - binary
+
+previous_mental_health_diagnosis
+    - binary
+
+therapy_history
+    - binary
+
+substance_use
+    - binary
+
+mental_health_risk
+    - discrete
+    - numerical
+    - Range: 0-2
