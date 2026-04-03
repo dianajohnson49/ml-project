@@ -5,22 +5,26 @@ Age
 Gender
     - discrete
     - categorical
-    - Other, Male, Female
+    - Male, Female, Other
+    - Converted to Male:0, Female:1, Other:2
 
 Marital_Status
     - discrete
     - categorical
     - Single, Divorced, Married
+    - Converted to S:0, D:1, M:2
 
 Education_Level 
     - discrete
     - categorical
     - High School, Bachelor, Master, PhD
+    - Converted to HS:0, B:1, M:2, PhD:3
 
 Employment
     - discrete
     - categorical
     - Student, Unemployed, Employed, Self-Employed
+    - Converted to S:0, U:1, E:2, SE:3
 
 Sleep_Hours
     - continuous
