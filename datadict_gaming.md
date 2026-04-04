@@ -4,7 +4,7 @@
 4 Binary categorical features to convert to binary numerical  
 
 ### features
-RECORD_ID
+__RECORD_ID__
 * Unique identifiers for each datapoint  
   
 
@@ -16,7 +16,7 @@ __Age__
   
 __Gender__
 * Categorical
-* Male, Female, Other
+* ```"Male", "Female", "Other"```
 * Convert to -> M:0, F:1, O:2  
   
   
@@ -27,7 +27,8 @@ __Daily gaming hours__
   
 __Game genre__
 * Categorical
-* "Mobile Games", "MOBA", "FPS", "Battle Royale", "MMO", "RPG", "Strategy",   
+* ```"Mobile Games", "MOBA", "FPS", "Battle Royale", "MMO", "RPG", "Strategy"```
+* Convert to -> MG:0, MOBA:1, FPS:2, BR:3, MMO:4, RPG:5, S:6  
   
   
 __Primary Game__
@@ -43,7 +44,7 @@ __Primary Game__
   
 __Gaming platform__
 * Categorical
-* "PC", "Multi-platform", "Console", "Mobile"
+* ```"PC", "Multi-platform", "Console", "Mobile"```
 * Convert to -> PC:0, MP:1, C:2, M:3  
   
   
@@ -55,21 +56,21 @@ __Sleep hours__
 __Sleep quality__  
 * Categorical
 * Ordinal
-* "Insomnia", "Very Poor", "Poor", "Fair", "Good", 
+* ```"Insomnia", "Very Poor", "Poor", "Fair", "Good",``` 
 * Convert to -> I:0, VP:1, P:2, F:3, G:4  
   
   
 __Sleep disruption__
 * Categorical
 * Ordinal
-* "Never", "Rarely", "Sometimes", "Often", "Always"
+* ```"Never", "Rarely", "Sometimes", "Often", "Always"```
 * Convert to -> N:0, R:1, S:2, O:4, A:5  
   
   
 __Academic work performance__
 * Categorical
 * Ordinal
-* "Failing", "Poor", "Below Average", "Average", "Good", "Excellent"
+* ```"Failing", "Poor", "Below Average", "Average", "Good", "Excellent"```
 * Convert to -> F:0, P:1, BA:2, A:3, G:4, E:5
   
   
@@ -85,14 +86,14 @@ __Work Productivity score__
   
 __Mood State__
 * Categorical
-* "Depressed", "Anxious", "Angry", "Irritable", "Withdrawn", "Restless", "Normal", "Excited", "Euphoric"
+* ```"Depressed", "Anxious", "Angry", "Irritable", "Withdrawn", "Restless", "Normal", "Excited", "Euphoric"```
 * Convert to ->  D:0, Ax:1, Ag:2, I:3, W:4, R:5, N:6, Ex:7, Eu:8 
   
   
 __Mood swing frequency__
 * Categorical
 * Ordinal
-* "Never", "Rarely", "Sometimes", "Often", "Daily"
+* ```"Never", "Rarely", "Sometimes", "Often", "Daily"```
 * Convert to -> N:0, R:1, S:2, O:3, D:4  
   
   
@@ -154,7 +155,7 @@ __Years gaming__
 __Gaming addiction risk level (target)__
 * Categorical
 * Ordinal
-* "Low", "Moderate", "High", "Severe"
+* ```"Low", "Moderate", "High", "Severe"```
 * Convert to -> L:0, M:1, H:2, S:3
 
 
