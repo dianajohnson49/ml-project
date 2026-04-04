@@ -3,6 +3,9 @@
 10 Categorical features to convert to discrete  
 4 Binary categorical features to convert to binary numerical  
 
+Sleep disruption, Mood swing frequency both use N/R/S/O/A scale
+Four binary features all use T/F for 1/0 
+
 ### features
 __RECORD_ID__
 * Unique identifiers for each datapoint  
@@ -77,11 +80,13 @@ __Academic work performance__
 __Grades GPA__
 * Continuous
 * Range:   
+* MISSING 246/1000 values
    
   
 __Work Productivity score__
 * Discrete
 * Range:  
+* MISSING 326/1000 values
   
   
 __Mood State__
