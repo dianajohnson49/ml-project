@@ -1,150 +1,157 @@
-#Gaming and mental health dataset
-27 features, 1000 datapoints  
+# Gaming and mental health dataset
+27 features, 1000 datapoints   
+10 Categorical features to convert to discrete  
+4 Binary categorical features to convert to binary numerical  
 
 ### features
 RECORD_ID
 * Unique identifiers for each datapoint  
   
 
-Age 
+__Age__
 * discrete
 * numerical
 * range:  
   
   
-Gender
+__Gender__
 * Categorical
 * Male, Female, Other
 * Convert to -> M:0, F:1, O:2  
   
   
-Daily gaming hours 
+__Daily gaming hours__ 
 * Continuous
 * Range:  
   
   
-Game genre
+__Game genre__
 * Categorical
-* "Mobile Games", "MOBA", "FBS", "Battle Royale", "MMO", "RPG", "Strategy",   
+* "Mobile Games", "MOBA", "FPS", "Battle Royale", "MMO", "RPG", "Strategy",   
   
   
-Primary Game
+__Primary Game__
 * Categorical
-* Idk how many different options there are for this, may be easier to remove
+* 24 possible values
+``` 
+"Age of Empires", "Apex Legends", "CS:GO", "Call of Duty", "Candy Crush", "Civilization VI", "Clash of Clans"
+"Cyberpunk 2077", "Dota 2", "Elden Ring", "Elder Scrolls Online", "Final Fantasy XIV", "Fortnite"
+"Genshin Impact", "League of Legends", "Mobile Legends", "Overwatch", "PUBG", "PUBG Mobile", "Skyrim",
+"StarCraft II", "Valorant", "Warzone", "World of Warcraft" 
+```
   
   
-Gaming platform
+__Gaming platform__
 * Categorical
 * "PC", "Multi-platform", "Console", "Mobile"
 * Convert to -> PC:0, MP:1, C:2, M:3  
   
   
-Sleep hours
+__Sleep hours__
 * Continuous
 * Range:   
   
   
-Sleep quality  
+__Sleep quality__  
 * Categorical
 * Ordinal
 * "Insomnia", "Very Poor", "Poor", "Fair", "Good", 
 * Convert to -> I:0, VP:1, P:2, F:3, G:4  
   
   
-Sleep disruption
+__Sleep disruption__
 * Categorical
 * Ordinal
 * "Never", "Rarely", "Sometimes", "Often", "Always"
 * Convert to -> N:0, R:1, S:2, O:4, A:5  
   
   
-Academic work performance
+__Academic work performance__
 * Categorical
 * Ordinal
 * "Failing", "Poor", "Below Average", "Average", "Good", "Excellent"
 * Convert to -> F:0, P:1, BA:2, A:3, G:4, E:5
   
   
-Grades GPA
+__Grades GPA__
 * Continuous
 * Range:   
    
   
-Work Productivity score
+__Work Productivity score__
 * Discrete
 * Range:  
   
   
-Mood State
+__Mood State__
 * Categorical
-* "Anxious", "Irritable", "Withdrawn", "Angry", "Restless", "Normal", "Euphoric", "Depressed", "Excited"
-* Convert to ->  
+* "Depressed", "Anxious", "Angry", "Irritable", "Withdrawn", "Restless", "Normal", "Excited", "Euphoric"
+* Convert to ->  D:0, Ax:1, Ag:2, I:3, W:4, R:5, N:6, Ex:7, Eu:8 
   
   
-Mood swing frequency
+__Mood swing frequency__
 * Categorical
 * Ordinal
 * "Never", "Rarely", "Sometimes", "Often", "Daily"
 * Convert to -> N:0, R:1, S:2, O:3, D:4  
   
   
-Withdrawal symptoms
+__Withdrawal symptoms__
 * Binary, T/F
 * Convert -> 0/1
   
   
-Loss of other interests  
+__Loss of other interests__  
 * Binary, T/F
 * Convert -> 0/1
   
   
-Continued despite problems  
+__Continued despite problems__  
 * Binary, T/F
 * Convert -> 0/1
   
   
-Eye strain 
+__Eye strain__ 
 * Binary, T/F
 * Convert -> 0/1 
   
-  
-Back neck pain  
+__Back neck pain__  
 * Binary, T/F
 * Convert -> 0/1
   
   
-Weight change (kg)
+__Weight change (kg)__
 * Continuous
 * Range: 
   
   
-Exercise hours weekly 
+__Exercise hours weekly__ 
 * Continuous
 * Range: 
   
   
-Social isolation score
+__Social isolation score__
 * Discrete
 * Range:  
   
   
-Face to face social hours weekly
+__Face to face social hours weekly__
 * Continuous
 * Range:  
   
   
-Monthly game spending (usd)
+__Monthly game spending (usd)__
 * Continuous
 * Range:  
   
   
-Years gaming
+__Years gaming__
 * Continuous
 * Integer
 * Range:  
   
   
-Gaming addiction risk level (target)
+__Gaming addiction risk level (target)__
 * Categorical
 * Ordinal
 * "Low", "Moderate", "High", "Severe"
