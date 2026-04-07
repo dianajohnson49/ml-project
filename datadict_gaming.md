@@ -14,7 +14,7 @@ __RECORD_ID__
 __Age__
 * discrete
 * numerical
-* range:  
+* range: 13-35
   
   
 __Gender__
@@ -25,7 +25,7 @@ __Gender__
   
 __Daily gaming hours__ 
 * Continuous
-* Range:  
+* Range: 0.5-15.1
   
   
 __Game genre__
@@ -53,7 +53,7 @@ __Gaming platform__
   
 __Sleep hours__
 * Continuous
-* Range:   
+* Range: 3.0-9.0
   
   
 __Sleep quality__  
@@ -79,13 +79,13 @@ __Academic work performance__
   
 __Grades GPA__
 * Continuous
-* Range:   
+* Range: 1.01-4.0 
 * MISSING 246/1000 values
    
   
 __Work Productivity score__
 * Discrete
-* Range:  
+* Range: 1-10
 * MISSING 326/1000 values
   
   
@@ -128,33 +128,33 @@ __Back neck pain__
   
 __Weight change (kg)__
 * Continuous
-* Range: 
+* Range: 0.0-8.9
   
   
 __Exercise hours weekly__ 
 * Continuous
-* Range: 
+* Range: 0.7-11.5
   
   
 __Social isolation score__
 * Discrete
-* Range:  
+* Range: 1-10
   
   
 __Face to face social hours weekly__
 * Continuous
-* Range:  
+* Range: 0.0-16.7  
   
   
 __Monthly game spending (usd)__
 * Continuous
-* Range:  
+* Range: 0.1-499.27
   
   
 __Years gaming__
 * Continuous
 * Integer
-* Range:  
+* Range: 1-20
   
   
 __Gaming addiction risk level (target)__
