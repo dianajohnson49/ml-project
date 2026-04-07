@@ -8,5 +8,20 @@
 ## Column Statistics
     - distributions are fairly even for all possible values of each feature
 
+## Gender
+    - tried to keep only male and female, but distributions are still pretty evenly distributed 
+
+# Clustering: K-means & DBSCAN
+## K-means 
+    - convert categorical data to discrete numerical data
+    - Perform elbow method
+
+
+## DBSCAN 
+    - DB scan -> low hopes.. data is pretty evenly distributed 
+
+
+
+
 
 

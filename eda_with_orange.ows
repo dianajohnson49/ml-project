@@ -2,15 +2,16 @@
 <scheme version="2.0" title="" description="">
 	<nodes>
 		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(125.0, 212.0)" />
-		<node id="1" name="Data Info" qualified_name="Orange.widgets.data.owdatainfo.OWDataInfo" project_name="Orange3" version="" title="Data Info" position="(193.0, 517.0)" />
+		<node id="1" name="Data Info" qualified_name="Orange.widgets.data.owdatainfo.OWDataInfo" project_name="Orange3" version="" title="Data Info" position="(248.0, 499.0)" />
 		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(283.0, 215.0)" />
-		<node id="3" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics" position="(461.0, 64.0)" />
+		<node id="3" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics" position="(467.0, 69.0)" />
 		<node id="4" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(480.0, 215.0)" />
-		<node id="5" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations" position="(472.0, 463.0)" />
-		<node id="6" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(689.0, 323.0)" />
+		<node id="5" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations" position="(480.0, 442.0)" />
+		<node id="6" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(633.0, 323.0)" />
 		<node id="7" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(482.0, 321.0)" />
-		<node id="8" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(429.0, 596.0)" />
-		<node id="9" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(655.0, 467.0)" />
+		<node id="8" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(463.0, -33.0)" />
+		<node id="9" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows" position="(477.0, 544.0)" />
+		<node id="10" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics (1)" position="(657.0, 547.0)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
@@ -21,7 +22,8 @@
 		<link id="5" source_node_id="2" sink_node_id="7" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
 		<link id="6" source_node_id="7" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="7" source_node_id="2" sink_node_id="8" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
-		<link id="8" source_node_id="5" sink_node_id="9" source_channel="Correlations" sink_channel="Data" enabled="true" source_channel_id="correlations" sink_channel_id="data" />
+		<link id="8" source_node_id="2" sink_node_id="9" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="9" source_node_id="9" sink_node_id="10" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
 	</links>
 	<annotations />
 	<thumbnail />
@@ -144,7 +146,43 @@ cmF0aW9uX2RpZmZpY3VsdHlfbGV2ZWyUSwKMFHBhbmljX2F0dGFja19oaXN0b3J5lEsBaBdLAYwg
 cHJldmlvdXNfbWVudGFsX2hlYWx0aF9kaWFnbm9zaXOUSwGMD3RoZXJhcHlfaGlzdG9yeZRLAYwN
 c3Vic3RhbmNlX3VzZZRLAWgfSwJ1jAVtZXRhc5R9lHViYXUu
 </properties>
-		<properties node_id="9" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01o\x00\x00\x00\x81\x00\x00\x04\x90\x00\x00\x02\x92\x00\x00\x01p\x00\x00\x00\x9e\x00\x00\x04\x8f\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00\x9e\x00\x00\x04\x8f\x00\x00\x02\x91', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': True, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="9" format="pickle">gASVsQMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAAB0wAAALMAAAQsAAACYAAAAdQAAADQAAAEKwAAAl8AAAAAAAAAAAYAAAAB1AAAANAA
+AAQrAAACX5SMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojAZnZW5kZXKUSwFLAV2UjAVPdGhlcpRhdJRhaAhLAnWMCmF0
+dHJpYnV0ZXOUfZQojANhZ2WUSwJoFEsBjA5tYXJpdGFsX3N0YXR1c5RLAYwPZWR1Y2F0aW9uX2xl
+dmVslEsBjBFlbXBsb3ltZW50X3N0YXR1c5RLAYwLc2xlZXBfaG91cnOUSwKMIHBoeXNpY2FsX2Fj
+dGl2aXR5X2hvdXJzX3Blcl93ZWVrlEsCjBlzY3JlZW5fdGltZV9ob3Vyc19wZXJfZGF5lEsCjBRz
+b2NpYWxfc3VwcG9ydF9zY29yZZRLAowRd29ya19zdHJlc3NfbGV2ZWyUSwKMF2FjYWRlbWljX3By
+ZXNzdXJlX2xldmVslEsCjBZqb2Jfc2F0aXNmYWN0aW9uX3Njb3JllEsCjBZmaW5hbmNpYWxfc3Ry
+ZXNzX2xldmVslEsCjBZ3b3JraW5nX2hvdXJzX3Blcl93ZWVrlEsCjA1hbnhpZXR5X3Njb3JllEsC
+jBBkZXByZXNzaW9uX3Njb3JllEsCjAxzdHJlc3NfbGV2ZWyUSwKMFW1vb2Rfc3dpbmdzX2ZyZXF1
+ZW5jeZRLAoweY29uY2VudHJhdGlvbl9kaWZmaWN1bHR5X2xldmVslEsCjBRwYW5pY19hdHRhY2tf
+aGlzdG9yeZRLAYwdZmFtaWx5X2hpc3RvcnlfbWVudGFsX2lsbG5lc3OUSwGMIHByZXZpb3VzX21l
+bnRhbF9oZWFsdGhfZGlhZ25vc2lzlEsBjA90aGVyYXB5X2hpc3RvcnmUSwGMDXN1YnN0YW5jZV91
+c2WUSwGMEm1lbnRhbF9oZWFsdGhfcmlza5RLAnWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+		<properties node_id="10" format="pickle">gASVwAMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lImMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAD/AAAAgQAABUIAAAKSAAABAAAAAJ4AAAVBAAAC
+kQAAAAAAAAAABgAAAAEAAAAAngAABUEAAAKRlIwHc29ydGluZ5RLAIwDc2lwlIwOX3VucGlja2xl
+X2VudW2Uk5SMDFB5UXQ1LlF0Q29yZZSMCVNvcnRPcmRlcpRLAIeUUpSGlIwLX192ZXJzaW9uX1+U
+SwKMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSU
+k5QpgZR9lCiMBnZhbHVlc5R9lCiMCWNvbG9yX3ZhcpSMBmdlbmRlcpRLZYaUjA1zZWxlY3RlZF92
+YXJzlF2UaA5LAnWMCmF0dHJpYnV0ZXOUfZQojANhZ2WUSwJoGUsBjA5tYXJpdGFsX3N0YXR1c5RL
+AYwPZWR1Y2F0aW9uX2xldmVslEsBjBFlbXBsb3ltZW50X3N0YXR1c5RLAYwLc2xlZXBfaG91cnOU
+SwKMIHBoeXNpY2FsX2FjdGl2aXR5X2hvdXJzX3Blcl93ZWVrlEsCjBlzY3JlZW5fdGltZV9ob3Vy
+c19wZXJfZGF5lEsCjBRzb2NpYWxfc3VwcG9ydF9zY29yZZRLAowRd29ya19zdHJlc3NfbGV2ZWyU
+SwKMF2FjYWRlbWljX3ByZXNzdXJlX2xldmVslEsCjBZqb2Jfc2F0aXNmYWN0aW9uX3Njb3JllEsC
+jBZmaW5hbmNpYWxfc3RyZXNzX2xldmVslEsCjBZ3b3JraW5nX2hvdXJzX3Blcl93ZWVrlEsCjA1h
+bnhpZXR5X3Njb3JllEsCjBBkZXByZXNzaW9uX3Njb3JllEsCjAxzdHJlc3NfbGV2ZWyUSwKMFW1v
+b2Rfc3dpbmdzX2ZyZXF1ZW5jeZRLAoweY29uY2VudHJhdGlvbl9kaWZmaWN1bHR5X2xldmVslEsC
+jBRwYW5pY19hdHRhY2tfaGlzdG9yeZRLAYwdZmFtaWx5X2hpc3RvcnlfbWVudGFsX2lsbG5lc3OU
+SwGMIHByZXZpb3VzX21lbnRhbF9oZWFsdGhfZGlhZ25vc2lzlEsBjA90aGVyYXB5X2hpc3RvcnmU
+SwGMDXN1YnN0YW5jZV91c2WUSwGMEm1lbnRhbF9oZWFsdGhfcmlza5RLAnWMBW1ldGFzlH2UdWJh
+dS4=
+</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
