@@ -5,6 +5,7 @@
 
 Sleep disruption, Mood swing frequency both use N/R/S/O/A scale
 Four binary features all use T/F for 1/0 
+Categorical features in order: Gender, Game genre, Primary game, gaming platform, sleep quality, sleep disruptions, academic performance, mood state, mood swings, gaming addiction risk level (target)  
 
 ### features
 __RECORD_ID__
