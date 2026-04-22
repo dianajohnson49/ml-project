@@ -5,7 +5,7 @@
 1 Unique numerical feature (record_id)  
 12 Numerical features (non-unique)  
 
-# feature information and encodings  
+## feature information and encodings  
 __RECORD_ID__
 * Unique identifiers for each datapoint  
   
