@@ -1,13 +1,11 @@
 # Gaming and mental health dataset
-27 features, 1000 datapoints   
-10 Categorical features to convert to discrete  
-4 Binary categorical features to convert to binary numerical  
+27 features, 1000 datapoints     
+10 Categorical features (including target)  
+4 Binary categorical features  
+1 Unique numerical feature (record_id)  
+12 Numerical features (non-unique)  
 
-Sleep disruption, Mood swing frequency both use N/R/S/O/A scale
-Four binary features all use T/F for 1/0 
-Categorical features in order: Gender, Game genre, Primary game, gaming platform, sleep quality, sleep disruptions, academic performance, mood state, mood swings, gaming addiction risk level (target)  
-
-### features
+# feature information and encodings  
 __RECORD_ID__
 * Unique identifiers for each datapoint  
   
