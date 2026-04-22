@@ -10,7 +10,7 @@ from matplotlib.colors import ListedColormap
 def readData(datafile):
     # get the current directory: directory name for the abs path of the curr file
     dirpath = os.getcwd()
-    abspath = dirpath + "\\" + datafile
+    abspath = dirpath + "\\data\\" + datafile
 
     # read data into a pandas dataframe. data file is comma separated so use read_csv
     df = pd.read_csv(abspath)
