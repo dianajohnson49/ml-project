@@ -3,10 +3,11 @@
 	<nodes>
 		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(115.0, 136.0)" />
 		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(273.0, 137.0)" />
-		<node id="2" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics" position="(524.0, 319.0)" />
-		<node id="3" name="Impute" qualified_name="Orange.widgets.data.owimpute.OWImpute" project_name="Orange3" version="" title="Impute" position="(360.0, 316.0)" />
-		<node id="4" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="After Impute" position="(537.0, 451.0)" />
-		<node id="5" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(681.0, 448.0)" />
+		<node id="2" name="Column Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Column Statistics" position="(609.0, 203.0)" />
+		<node id="3" name="Impute" qualified_name="Orange.widgets.data.owimpute.OWImpute" project_name="Orange3" version="" title="Impute" position="(462.0, 210.0)" />
+		<node id="4" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="After Impute" position="(607.0, 303.0)" />
+		<node id="5" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(767.0, 300.0)" />
+		<node id="6" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations" position="(463.0, 84.0)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
@@ -14,6 +15,7 @@
 		<link id="2" source_node_id="3" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="5" source_node_id="1" sink_node_id="6" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
 	</links>
 	<annotations />
 	<thumbnail />
@@ -83,6 +85,22 @@ ZWNvcmRfaWSUSwNzdWJldS4=
 </properties>
 		<properties node_id="4" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01o\x00\x00\x00\x81\x00\x00\x04\x90\x00\x00\x02\x92\x00\x00\x01p\x00\x00\x00\x9e\x00\x00\x04\x8f\x00\x00\x02\x91\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00\x9e\x00\x00\x04\x8f\x00\x00\x02\x91', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': True, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
 		<properties node_id="5" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x8d\x00\x00\x019\x00\x00\x03\xe1\x00\x00\x01\xdb\x00\x00\x02\x8e\x00\x00\x01V\x00\x00\x03\xe0\x00\x00\x01\xda\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\x8e\x00\x00\x01V\x00\x00\x03\xe0\x00\x00\x01\xda', 'stored_name': 'GamingandMentalHealth_final.csv', 'stored_path': '.', '__version__': 3}</properties>
+		<properties node_id="6" format="pickle">gASVLQMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBjb3JyZWxhdGlvbl90eXBllEsB
+jA5pbXB1dGVfbWlzc2luZ5SIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAJQAAAA
+swAABXgAAAMhAAACUQAAANAAAAV3AAADIAAAAAAAAAAABgAAAAJRAAAA0AAABXcAAAMglIwLX192
+ZXJzaW9uX1+USwOMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SM
+B0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMB2ZlYXR1cmWUTkr+////hpSMCXNlbGVjdGlv
+bpRdlCiMEmRhaWx5X2dhbWluZ19ob3Vyc5RLZoaUjCBmYWNlX3RvX2ZhY2Vfc29jaWFsX2hvdXJz
+X3dlZWtseZRLZoaUZUr9////hpRoBksDdYwKYXR0cmlidXRlc5R9lCiMClVubmFtZWQ6IDCUSwKM
+A2FnZZRLAowGZ2VuZGVylEsCaBRLAowKZ2FtZV9nZW5yZZRLAowMcHJpbWFyeV9nYW1llEsCjA9n
+YW1pbmdfcGxhdGZvcm2USwKMC3NsZWVwX2hvdXJzlEsCjA1zbGVlcF9xdWFsaXR5lEsCjBpzbGVl
+cF9kaXNydXB0aW9uX2ZyZXF1ZW5jeZRLAowZYWNhZGVtaWNfd29ya19wZXJmb3JtYW5jZZRLAowK
+Z3JhZGVzX2dwYZRLAowXd29ya19wcm9kdWN0aXZpdHlfc2NvcmWUSwKMCm1vb2Rfc3RhdGWUSwKM
+FG1vb2Rfc3dpbmdfZnJlcXVlbmN5lEsCjBB3ZWlnaHRfY2hhbmdlX2tnlEsCjBVleGVyY2lzZV9o
+b3Vyc193ZWVrbHmUSwKMFnNvY2lhbF9pc29sYXRpb25fc2NvcmWUSwJoFksCjBltb250aGx5X2dh
+bWVfc3BlbmRpbmdfdXNklEsCjAx5ZWFyc19nYW1pbmeUSwKMG2dhbWluZ19hZGRpY3Rpb25fcmlz
+a19sZXZlbJRLAnWMBW1ldGFzlH2UdWJhdS4=
+</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
