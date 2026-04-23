@@ -7,7 +7,7 @@ Authors:
 ## Dataset
 Primary dataset: [Gaming and Mental Health](https://www.kaggle.com/datasets/shaistashahid/gaming-and-mental-health)
 
-## Gaming and mental health dataset information
+### Gaming and mental health dataset information
 27 features, 1000 datapoints     
 10 Categorical features (including target)  
 4 Binary categorical features  
