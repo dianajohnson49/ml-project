@@ -35,7 +35,7 @@ def main():
 
     # project into 3d space
     ndims = 3 # dims of the embedded space
-    tsne = TSNE(ndims)  # create tsne object with 3 dims
+    tsne = TSNE(ndims, learning_rate=15)  # create tsne object with 3 dims
     result = tsne.fit_transform(xscaled) # actually calculate tsne on the scaled dataset!
     # create a dataframe with each tsne vector and the target for easier plotting
     result_df = pd.DataFrame({'TSNE_col1': result[:,0], 
